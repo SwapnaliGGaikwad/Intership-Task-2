@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><img src="logo.png" width="200px"></div>
+            <ul class="menu">
+                <li><a href="index.html" class="menu-btn">Home</a></li>
+                <li><a href="products.html" class="menu-btn">Products</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="contact.html" class="menu-btn">Contacts</a></li>
+                <li><a href="account.html" class="menu-btn">Account</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!---------------------------account-------------->
+    <section class="account">
+        <div class="account-page">
+            <div class="container">
+                  <div class="row">
+
+                  </div>
+                  <div class="col-2">
+                      <div class="form-container">
+                          <div class="form-btn">
+                               <span onclick="login()">Login</span>
+                               <span onclick="register()">Register</span> 
+                               <hr id="indicator">
+                          </div>
+
+                          <form id="loginform">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn">Login</button>
+                                <a href="">Forgot password??</a>
+                          </form>
+
+                          <form id="regform">
+                                <input type="text" placeholder="Username">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn">Register</button>
+                          </form>
+                         </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+   
+      <!------------------------------footer------------>
+      <section class="footer">
+        <div class="container">
+           <div class="row">
+                <div class="col-4">
+                       <h3>Download Our App</h3>
+                            <p>Download App For Andoroid And Mobile.</p>
+                            <div class="">
+                                <img src="play-store.png" >
+                                <img src="app-store.png" >
+                            </div>
+                </div>
+                <div class="col-4">
+                       <img src="logo-white.png" width="100%">
+                       <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                   
+                </div>
+                <div class="col-4">
+                   <h3>Useful Links</h3>
+                   <ul>
+                       <li>Coupons</li>
+                       <li>Blog Policy</li>
+                       <li>Return Policy</li>
+                       <li>Join Affiliate</li>
+                   </ul>
+                </div>
+                <div class="col-4">
+                   <h3>Follow Us </h3>
+                   <ul>
+                       <li>Facebook</li>
+                       <li>Twitter</li>
+                       <li>Instagram</li>
+                       <li>You Tube</li>
+                   </ul>
+                </div>
+               </div>
+           </div>
+        </div>
+        <hr>
+           <p class="copyright">Copyright 2020 - Swap Gaikwad</p>
+</section>  
+
+<!--------------js for toggle form--------------->
+
+<script>
+
+    var loginform = document.getElementById("loginform");
+    var regform = document.getElementById("regform");
+    var indicator=document.getElementById("indicator");
+
+          function register(){
+
+                  regform.style.transform = "translateX(0px)";
+                  loginform.style.transform = "translateX(0px)";
+                  indicator.style.transform = "translateX(100px)";
+          }
+          function login(){
+
+                  regform.style.transform = "translateX(300px)";
+                  loginform.style.transform = "translateX(300px)";
+                  indicator.style.transform = "translateX(0px)";
+          }
+</script>
+</body>
+</html>
